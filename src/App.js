@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ReactDOM } from 'react';
 import { CardList } from './card-list-component';
 import {SearchBox} from './search-box.component.js';
 
@@ -56,7 +57,7 @@ class App extends Component{
          }} /> */}
          <h1>Monsters Rolodex</h1>
          <SearchBox 
-         placehoder='search monsters'
+         placeholder='search monsters'
          handleChange={e=>{this.setState({searchField:e.target.value},()=>
          console.log(this.state));
          }}
